@@ -1,5 +1,5 @@
 author: Simon Repp
-name: enokai-light
+name: enokai-dark
 
 # colors
 
@@ -20,9 +20,9 @@ yellow       :  #e6db74
 
 # globals
 
-background: white
-caret: dark_gray
-foreground: dark_gray
+background: dark_gray
+caret: white
+foreground: white
 selection: gray
 
 # scopes

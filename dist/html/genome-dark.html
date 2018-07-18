@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>
+      genome-dark
+    </title>
+
+    <style>
+      body {
+        background-color: #181819;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      .block_operator{color:#ff5370;}
+.comment{color:#969896;}
+.comment_operator{color:#969896;}
+.continuation_operator{color:#8a6d7b;}
+.copy_operator{color:#b2d218;}
+.entry{color:#c959e2;}
+.entry_operator{color:#c959e2;}
+.escape_operator{color:#8a6d7b;}
+.invalid{color:#fff;background-color:#ff5370;}
+.item_operator{color:#8a6d7b;}
+.name{color:#ff5370;}
+.name_operator{color:#8a6d7b;}
+.section1_operator{color:#ffb500;}
+.section1_escape_operator{color:#ffb500;}
+.section1_name{color:#ffb500;font-weight:bold;}
+.section1_copy_operator{color:#b2d218;}
+.section1_template{color:#b2d218;font-weight:bold;font-style:italic;}
+.section2_operator{color:#ff3f00;}
+.section2_escape_operator{color:#ff3f00;}
+.section2_name{color:#ff3f00;font-weight:bold;}
+.section2_copy_operator{color:#b2d218;}
+.section2_template{color:#b2d218;font-weight:bold;font-style:italic;}
+.section3_operator{color:#ff00ac;}
+.section3_escape_operator{color:#ff00ac;}
+.section3_name{color:#ff00ac;font-weight:bold;}
+.section3_copy_operator{color:#b2d218;}
+.section3_template{color:#b2d218;font-weight:bold;font-style:italic;}
+.section4_operator{color:#8e20ff;}
+.section4_escape_operator{color:#8e20ff;}
+.section4_name{color:#8e20ff;font-weight:bold;}
+.section4_copy_operator{color:#b2d218;}
+.section4_template{color:#b2d218;font-weight:bold;font-style:italic;}
+.section5_operator{color:#3a34ff;}
+.section5_escape_operator{color:#3a34ff;}
+.section5_name{color:#3a34ff;font-weight:bold;}
+.section5_copy_operator{color:#b2d218;}
+.section5_template{color:#b2d218;font-weight:bold;font-style:italic;}
+.section6_operator{color:#009dff;}
+.section6_escape_operator{color:#009dff;}
+.section6_name{color:#009dff;font-weight:bold;}
+.section6_copy_operator{color:#b2d218;}
+.section6_template{color:#b2d218;font-weight:bold;font-style:italic;}
+.template{color:#b2d218;font-style:italic;}
+    </style>
+  </head>
+  <body>
+    <pre><code><span class="comment_operator">&gt;</span> <span class="comment">Text of Comment</span>
+
+<span class="name">Date</span><span class="name_operator">:</span> 1st of November in the year 2017
+
+<span class="block_operator">--</span> <span class="name">Book Description</span>
+Lacks a certain ...
+something
+<span class="block_operator">--</span> <span class="name">Book Description</span>
+
+<span class="name">Shopping List</span><span class="name_operator">:</span>
+<span class="item_operator">-</span> Apples
+<span class="item_operator">-</span> Oranges
+
+<span class="name">blitz</span> <span class="copy_operator">&lt;</span> <span class="template">blotz</span>
+
+<span class="name">Telephone Numbers</span><span class="name_operator">:</span>
+<span class="entry">Ben</span> <span class="entry_operator">=</span> +49 1943 24724784
+<span class="entry">Rachel</span> <span class="entry_operator">=</span> +59 3459 35935593
+<span class="escape_operator">`</span><span class="entry">Dave</span><span class="escape_operator">`</span> <span class="entry_operator">=</span> +69 9025 93593531
+
+<span class="section1_operator">#</span> <span class="section1_name">Body</span>
+<span class="section1_operator">#</span> <span class="section1_name">Body</span> <span class="section1_copy_operator">&lt;</span> <span class="section1_template">Foo</span>
+<span class="section2_operator">##</span> <span class="section2_escape_operator">`</span><span class="section2_name">Limbs</span><span class="section2_escape_operator">`</span></span>
+<span class="section3_operator">###</span> <span class="section3_name">Four</span>
+<span class="section4_operator">####</span> <span class="section4_name">4</span>
+<span class="section5_operator">#####</span> <span class="section5_name">5</span>
+<span class="section6_operator">######</span> <span class="section6_name">6</span>
+<span class="section6_operator">#######</span> <span class="section6_name">7</span>
+<span class="section3_operator">###</span> <span class="section3_name">Left Arm</span>
+
+<span class="section3_operator">###</span> <span class="section3_escape_operator">`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">`</span></span> <span class="copy_operator">&lt;</span> <span class="template">Left Arm</span>
+<span class="section3_operator">###</span> <span class="section3_escape_operator">`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">`</span></span> <span class="copy_operator">&lt;&lt;</span> <span class="template">Left Arm</span>
+
+<span class="escape_operator">`</span><span class="name">--format pretty</span><span class="escape_operator">`</span><span class="name_operator">:</span> Pretty formatting option
+
+<span class="escape_operator">`</span><span class="name">> Friends <</span><span class="escape_operator">`</span><span class="name_operator">:</span>
+<span class="item_operator">-</span> Jack the Ripper
+<span class="item_operator">-</span> Frankenstein
+
+<span class="escape_operator">``</span><span class="name">Use `${arg}` style options</span><span class="escape_operator">``</span><span class="name_operator">:</span>
+<span class="entry">'--output dir'</span> <span class="entry_operator">=</span> Specify a different output directory
+<span class="entry">'--filters disabled'</span> <span class="entry_operator">=</span> Enable/disable filters
+
+<span class="invalid">asdfa</span>
+
+<span class="name">I</span><span class="name_operator">:</span>
+<span class="continuation_operator">|</span>
+<span class="continuation_operator">\</span> append
+<span class="continuation_operator">\</span>
+<span class="continuation_operator">|</span> all
+<span class="continuation_operator">|</span> the
+<span class="continuation_operator">\</span> things</code></pre>
+  </body>
+</html>

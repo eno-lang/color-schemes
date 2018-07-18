@@ -1,0 +1,108 @@
+author: Simon Repp
+name: genome-dark
+
+# colors
+
+dark_gray   :  #181819
+gray        :  #969896
+green       :  #b2d218
+pink        :  #ff5370
+pink_light  :  #8a6d7b
+violet      :  #c959e2
+white       :  #fff
+1_yellow    :  #ffb500
+2_orange    :  #ff3f00
+3_pink      :  #ff00ac
+4_violet    :  #8e20ff
+5_blue      :  #3a34ff
+6_cyan      :  #009dff
+
+# globals
+
+background: dark_gray
+caret: white
+foreground: white
+selection: gray
+
+# scopes
+
+block_operator            :  pink
+comment                   :  gray 
+comment_operator          :  gray
+continuation_operator     :  pink_light
+copy_operator             :  green
+entry                     :  violet
+entry_operator            :  violet
+escape_operator           :  pink_light
+
+invalid                   :
+background                =  pink
+foreground                =  white
+
+item_operator             :  pink_light
+name                      :  pink
+name_operator             :  pink_light
+
+section1_operator         : 1_yellow
+section1_escape_operator  : 1_yellow
+section1_name             :
+foreground                = 1_yellow
+styles                    = bold
+section1_copy_operator    : green
+section1_template         :
+foreground                = green
+styles                    = bold, italic
+
+section2_operator         : 2_orange
+section2_escape_operator  : 2_orange
+section2_name             :
+foreground                = 2_orange
+styles                    = bold
+section2_copy_operator    : green
+section2_template         :
+foreground                = green
+styles                    = bold, italic
+
+section3_operator         : 3_pink
+section3_escape_operator  : 3_pink
+section3_name             :
+foreground                = 3_pink
+styles                    = bold
+section3_copy_operator    : green
+section3_template         :
+foreground                = green
+styles                    = bold, italic
+
+section4_operator         : 4_violet
+section4_escape_operator  : 4_violet
+section4_name             :
+foreground                = 4_violet
+styles                    = bold
+section4_copy_operator    : green
+section4_template         :
+foreground                = green
+styles                    = bold, italic
+
+section5_operator         : 5_blue
+section5_escape_operator  : 5_blue
+section5_name             :
+foreground                = 5_blue
+styles                    = bold
+section5_copy_operator    : green
+section5_template         :
+foreground                = green
+styles                    = bold, italic
+
+section6_operator         : 6_cyan
+section6_escape_operator  : 6_cyan
+section6_name             :
+foreground                = 6_cyan
+styles                    = bold
+section6_copy_operator    : green
+section6_template         :
+foreground                = green
+styles                    = bold, italic
+
+template                  :
+foreground                = green
+styles                    = italic
