@@ -1,0 +1,32 @@
+> TODO: background (individual scopes) and bold/italic extras
+
+author: Simon Repp
+
+colors:
+dark_gray  =  #282828
+gray       =  #75715E
+green      =  #A6E22E
+orange     =  #FD971F
+pink       =  #F92672
+turquoise  =  #66D9EF
+violet     =  #AE81FF
+white      =  #F8F8F2
+yellow     =  #E6DB74
+
+background: white
+foreground: dark_gray
+
+scopes:
+block_operator         =  pink
+comment                =  gray 
+comment_operator       =  gray
+continuation_operator  =  violet
+copy_operator          =  yellow
+entry                  =  green
+escape_operator        =  yellow
+invalid                =  white
+item_operator          =  violet
+name                   =  pink
+name_operator          =  yellow
+section                =  turquoise
+template               =  orange

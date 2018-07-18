@@ -1,0 +1,33 @@
+{
+  "author": "Simon Repp <simon@fdpl.io>",
+  "bugs": {
+    "url": "https://github.com/eno-lang/color-schemes/issues"
+  },
+  "description": "Unified color scheme generator for all eno editor plugins",
+  "devDependencies": {
+    "enojs": "^0.14.1",
+    "glob": "^7.1.2",
+    "nodemon": "^1.18.3"
+  },
+  "homepage": "https://github.com/eno-lang/color-schemes",
+  "keywords": [
+    "colors",
+    "color schemes",
+    "palettes",
+    "schemes",
+    "themes"
+  ],
+  "license": "MIT",
+  "main": "generate.js",
+  "name": "color-schemes",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eno-lang/color-schemes.git"
+  },
+  "scripts": {
+    "generate": "node generate.js",
+    "watch": "nodemon generate.js --ext eno,js --watch generate.js --watch schemes --watch templates"
+  },
+  "version": "0.0.0"
+}
