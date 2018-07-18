@@ -29,5 +29,5 @@
     "generate": "node generate.js",
     "watch": "nodemon generate.js --ext eno,js --watch generate.js --watch schemes --watch templates"
   },
-  "version": "0.0.0"
+  "version": "0.1.0"
 }
