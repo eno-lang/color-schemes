@@ -5,6 +5,7 @@ const glob = require('glob');
 const path = require('path');
 
 const html = require('./templates/html.js');
+const sublime = require('./templates/sublime.js');
 
 const generateScheme = filepath => {
   const input = fs.readFileSync(filepath, 'utf-8');
@@ -52,10 +53,13 @@ const generateScheme = filepath => {
   });
 
   fs.writeFileSync(path.join(__dirname, `dist/html/${scheme.name}.html`), html(scheme));
+  fs.writeFileSync(path.join(__dirname, `dist/sublime/${scheme.name}.sublime-color-scheme`), sublime(scheme));
 }
 
 fsExtra.emptyDirSync(path.join(__dirname, 'dist'));
 fsExtra.mkdirSync(path.join(__dirname, 'dist/html'));
+fsExtra.mkdirSync(path.join(__dirname, 'dist/sublime'));
+
 glob(path.join(__dirname, 'schemes/*.eno'), (err, files) => {
   if(err)
     throw err;

@@ -1,0 +1,202 @@
+{
+  "name": "enokai",
+  "globals": {
+    "background": "#202024",
+    "caret": "#fff",
+    "foreground": "#fff",
+    "selection": "#303030"
+  },
+  "rules": [
+    {
+      "foreground": "#f92672",
+      "scope": "entity.name.block"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.block"
+    },
+    {
+      "foreground": "#484848",
+      "scope": "comment",
+      "font_style": "italic"
+    },
+    {
+      "foreground": "#484848",
+      "scope": "punctuation.definition.comment"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.continuation"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.name.template"
+    },
+    {
+      "foreground": "#66d9ef",
+      "scope": "variable.other.name.entry.eno"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.name.entry"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "todo"
+    },
+    {
+      "foreground": "#fff",
+      "scope": "invalid",
+      "background": "#f92644"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.item"
+    },
+    {
+      "foreground": "#f92672",
+      "scope": "variable.other.name"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.name"
+    },
+    {
+      "foreground": "#ae81ff",
+      "scope": "punctuation.definition.section.1"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.1.escape"
+    },
+    {
+      "foreground": "#e6db74",
+      "scope": "entity.name.section.1",
+      "font_style": "bold"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.1.template"
+    },
+    {
+      "foreground": "#fd971f",
+      "scope": "entity.name.section.1.template",
+      "font_style": "italic"
+    },
+    {
+      "foreground": "#ae81ff",
+      "scope": "punctuation.definition.section.2"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.2.escape"
+    },
+    {
+      "foreground": "#e6db74",
+      "scope": "entity.name.section.2",
+      "font_style": "bold"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.2.template"
+    },
+    {
+      "foreground": "#fd971f",
+      "scope": "entity.name.section.2.template",
+      "font_style": "italic"
+    },
+    {
+      "foreground": "#ae81ff",
+      "scope": "punctuation.definition.section.3"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.3.escape"
+    },
+    {
+      "foreground": "#e6db74",
+      "scope": "entity.name.section.3",
+      "font_style": "bold"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.3.template"
+    },
+    {
+      "foreground": "#fd971f",
+      "scope": "entity.name.section.3.template",
+      "font_style": "italic"
+    },
+    {
+      "foreground": "#ae81ff",
+      "scope": "punctuation.definition.section.4"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.4.escape"
+    },
+    {
+      "foreground": "#e6db74",
+      "scope": "entity.name.section.4",
+      "font_style": "bold"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.4.template"
+    },
+    {
+      "foreground": "#fd971f",
+      "scope": "entity.name.section.4.template",
+      "font_style": "italic"
+    },
+    {
+      "foreground": "#ae81ff",
+      "scope": "punctuation.definition.section.5"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.5.escape"
+    },
+    {
+      "foreground": "#e6db74",
+      "scope": "entity.name.section.5",
+      "font_style": "bold"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.5.template"
+    },
+    {
+      "foreground": "#fd971f",
+      "scope": "entity.name.section.5.template",
+      "font_style": "italic"
+    },
+    {
+      "foreground": "#ae81ff",
+      "scope": "punctuation.definition.section.6"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.6.escape"
+    },
+    {
+      "foreground": "#e6db74",
+      "scope": "entity.name.section.6",
+      "font_style": "bold"
+    },
+    {
+      "foreground": "#a6e22e",
+      "scope": "punctuation.definition.section.6.template"
+    },
+    {
+      "foreground": "#fd971f",
+      "scope": "entity.name.section.6.template",
+      "font_style": "bold italic"
+    },
+    {
+      "foreground": "#fd971f",
+      "scope": "variable.other.name.template",
+      "font_style": "italic"
+    }
+  ]
+}
