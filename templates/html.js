@@ -12,6 +12,14 @@ module.exports = scheme => `
         font-size: 18px;
       }
 
+      .caret {
+        color: ${scheme.caret};
+      }
+
+      .selection {
+        background-color: ${scheme.selection};
+      }
+
       ${scheme.scopes.map(scope => {
         result = `.${scope.name}{`;
         result += `color:${scope.foreground};`;
@@ -65,8 +73,8 @@ something
 <span class="section6_operator">#######</span> <span class="section6_name">7</span>
 <span class="section3_operator">###</span> <span class="section3_name">Left Arm</span>
 
-<span class="section3_operator">###</span> <span class="section3_escape_operator">\`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">\`</span></span> <span class="copy_operator">&lt;</span> <span class="template">Left Arm</span>
-<span class="section3_operator">###</span> <span class="section3_escape_operator">\`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">\`</span></span> <span class="copy_operator">&lt;&lt;</span> <span class="template">Left Arm</span>
+<span class="section3_operator">###</span> <span class="section3_escape_operator">\`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">\`</span></span> <span class="section3_copy_operator">&lt;</span> <span class="section3_template">Left Arm</span>
+<span class="section3_operator">###</span> <span class="section3_escape_operator">\`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">\`</span></span> <span class="section3_copy_operator">&lt;&lt;</span> <span class="section3_template">Left Arm</span>
 
 <span class="escape_operator">\`</span><span class="name">--format pretty</span><span class="escape_operator">\`</span><span class="name_operator">:</span> Pretty formatting option
 
@@ -86,7 +94,14 @@ something
 <span class="continuation_operator">\\</span>
 <span class="continuation_operator">|</span> all
 <span class="continuation_operator">|</span> the
-<span class="continuation_operator">\\</span> things</code></pre>
+<span class="continuation_operator">\\</span> things
+
+<span class="selection"><span class="comment_operator">&gt;</span> <span class="comment">Comment</span>
+
+<span class="name">Telephone Numbers</span><span class="name_operator">:</span>
+<span class="entry">Ben</span> <span class="entry_operator">=</span> +49 1943 24724784
+<span class="entry">Rachel</span> <span class="entry_operator">=</span> +59 3459 35935593
+<span class="escape_operator">\`</span><span class="entry">Dave</span><span class="escape_operator">\`</span> <span class="entry_operator">=</span> +69 9025 93593531<span class="caret">|</span></span></code></pre>
   </body>
 </html>
 `.trim();
