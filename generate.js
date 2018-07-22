@@ -1,5 +1,6 @@
 const { parse, Fieldset } = require('enojs');
 const fs = require('fs');
+const fsExtra = require('fs-extra');
 const glob = require('glob');
 const path = require('path');
 
@@ -53,6 +54,8 @@ const generateScheme = filepath => {
   fs.writeFileSync(path.join(__dirname, `dist/html/${scheme.name}.html`), html(scheme));
 }
 
+fsExtra.emptyDirSync(path.join(__dirname, 'dist'));
+fsExtra.mkdirSync(path.join(__dirname, 'dist/html'));
 glob(path.join(__dirname, 'schemes/*.eno'), (err, files) => {
   if(err)
     throw err;
