@@ -5,7 +5,7 @@
   },
   "description": "Unified color scheme generator for all eno editor plugins",
   "devDependencies": {
-    "enojs": "^0.15.0",
+    "enojs": "^0.16.0",
     "glob": "^7.1.2",
     "nodemon": "^1.18.3"
   },

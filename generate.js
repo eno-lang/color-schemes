@@ -1,4 +1,4 @@
-const { parse, EnoDictionary } = require('enojs');
+const { parse, Fieldset } = require('enojs');
 const fs = require('fs');
 const glob = require('glob');
 const path = require('path');
@@ -35,7 +35,7 @@ const generateScheme = filepath => {
   scheme.scopes = document.section('scopes').elements().map(scopeElement => {
     let background, foreground, style;
 
-    if(scopeElement instanceof EnoDictionary) {
+    if(scopeElement instanceof Fieldset) {
       return {
         background: scopeElement.entry('background', colorReference),
         foreground: scopeElement.entry('foreground', colorReference, { required: true }),
