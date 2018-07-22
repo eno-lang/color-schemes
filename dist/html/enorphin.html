@@ -1,58 +1,68 @@
 <html>
   <head>
     <title>
-      enokai-dark
+      enorphin
     </title>
 
     <style>
       body {
-        background-color: #282828;
-        color: #f8f8f2;
+        background-color: #f5f2f0;
+        color: #333;
         font-size: 18px;
       }
 
-      .block_operator{color:#f92672;}
-.comment{color:#75715e;}
-.comment_operator{color:#75715e;}
-.continuation_operator{color:#ae81ff;}
-.copy_operator{color:#e6db74;}
-.entry{color:#a6e22e;}
-.escape_operator{color:#e6db74;}
-.invalid{color:#f8f8f2;background-color:#f92672;}
-.item_operator{color:#ae81ff;}
-.name{color:#f92672;}
-.name_operator{color:#e6db74;}
-.section1_operator{color:#66d9ef;}
-.section1_escape_operator{color:#66d9ef;}
-.section1_name{color:#66d9ef;font-weight:bold;}
-.section1_copy_operator{color:#a6e22e;}
-.section1_template{color:#a6e22e;font-weight:bold;font-style:italic;}
-.section2_operator{color:#66efcf;}
-.section2_escape_operator{color:#66efcf;}
-.section2_name{color:#66efcf;font-weight:bold;}
-.section2_copy_operator{color:#a6e22e;}
-.section2_template{color:#a6e22e;font-weight:bold;font-style:italic;}
-.section3_operator{color:#66ef9d;}
-.section3_escape_operator{color:#66ef9d;}
-.section3_name{color:#66ef9d;font-weight:bold;}
-.section3_copy_operator{color:#a6e22e;}
-.section3_template{color:#a6e22e;font-weight:bold;font-style:italic;}
-.section4_operator{color:#cdef66;}
-.section4_escape_operator{color:#cdef66;}
-.section4_name{color:#cdef66;font-weight:bold;}
-.section4_copy_operator{color:#a6e22e;}
-.section4_template{color:#a6e22e;font-weight:bold;font-style:italic;}
-.section5_operator{color:#ef9966;}
-.section5_escape_operator{color:#ef9966;}
-.section5_name{color:#ef9966;font-weight:bold;}
-.section5_copy_operator{color:#a6e22e;}
-.section5_template{color:#a6e22e;font-weight:bold;font-style:italic;}
-.section6_operator{color:#ef6692;}
-.section6_escape_operator{color:#ef6692;}
-.section6_name{color:#ef6692;font-weight:bold;}
-.section6_copy_operator{color:#a6e22e;}
-.section6_template{color:#a6e22e;font-weight:bold;font-style:italic;}
-.template{color:#fd971f;font-style:italic;}
+      .caret {
+        color: #333;
+      }
+
+      .selection {
+        background-color: #ddd8d4;
+      }
+
+      .block_name{color:#f06048;}
+.block_operator{color:#888;}
+.comment{color:#bbb;font-style:italic;}
+.comment_operator{color:#bbb;}
+.continuation_operator{color:#888;}
+.copy_operator{color:#888;}
+.entry{color:#5978e2;}
+.entry_operator{color:#888;}
+.escape_operator{color:#888;}
+.invalid{color:#ff2400;background-color:#ffb500;}
+.item_operator{color:#888;}
+.name{color:#f06048;}
+.name_operator{color:#888;}
+.section1_operator{color:#ffb500;}
+.section1_escape_operator{color:#888;}
+.section1_name{color:#89d57b;font-weight:bold;}
+.section1_copy_operator{color:#888;}
+.section1_template{color:#b2d218;font-style:italic;}
+.section2_operator{color:#ffb500;}
+.section2_escape_operator{color:#888;}
+.section2_name{color:#89d57b;font-weight:bold;}
+.section2_copy_operator{color:#888;}
+.section2_template{color:#b2d218;font-style:italic;}
+.section3_operator{color:#ffb500;}
+.section3_escape_operator{color:#888;}
+.section3_name{color:#89d57b;font-weight:bold;}
+.section3_copy_operator{color:#888;}
+.section3_template{color:#b2d218;font-style:italic;}
+.section4_operator{color:#ffb500;}
+.section4_escape_operator{color:#888;}
+.section4_name{color:#89d57b;font-weight:bold;}
+.section4_copy_operator{color:#888;}
+.section4_template{color:#b2d218;font-style:italic;}
+.section5_operator{color:#ffb500;}
+.section5_escape_operator{color:#888;}
+.section5_name{color:#89d57b;font-weight:bold;}
+.section5_copy_operator{color:#888;}
+.section5_template{color:#b2d218;font-style:italic;}
+.section6_operator{color:#ffb500;}
+.section6_escape_operator{color:#888;}
+.section6_name{color:#89d57b;font-weight:bold;}
+.section6_copy_operator{color:#888;}
+.section6_template{color:#b2d218;font-weight:bold;font-style:italic;}
+.template{color:#b2d218;font-style:italic;}
     </style>
   </head>
   <body>
@@ -86,8 +96,8 @@ something
 <span class="section6_operator">#######</span> <span class="section6_name">7</span>
 <span class="section3_operator">###</span> <span class="section3_name">Left Arm</span>
 
-<span class="section3_operator">###</span> <span class="section3_escape_operator">`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">`</span></span> <span class="copy_operator">&lt;</span> <span class="template">Left Arm</span>
-<span class="section3_operator">###</span> <span class="section3_escape_operator">`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">`</span></span> <span class="copy_operator">&lt;&lt;</span> <span class="template">Left Arm</span>
+<span class="section3_operator">###</span> <span class="section3_escape_operator">`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">`</span></span> <span class="section3_copy_operator">&lt;</span> <span class="section3_template">Left Arm</span>
+<span class="section3_operator">###</span> <span class="section3_escape_operator">`</span><span class="section3_name">Right Arm</span><span class="section3_escape_operator">`</span></span> <span class="section3_copy_operator">&lt;&lt;</span> <span class="section3_template">Left Arm</span>
 
 <span class="escape_operator">`</span><span class="name">--format pretty</span><span class="escape_operator">`</span><span class="name_operator">:</span> Pretty formatting option
 
@@ -107,6 +117,13 @@ something
 <span class="continuation_operator">\</span>
 <span class="continuation_operator">|</span> all
 <span class="continuation_operator">|</span> the
-<span class="continuation_operator">\</span> things</code></pre>
+<span class="continuation_operator">\</span> things
+
+<span class="selection"><span class="comment_operator">&gt;</span> <span class="comment">Comment</span>
+
+<span class="name">Telephone Numbers</span><span class="name_operator">:</span>
+<span class="entry">Ben</span> <span class="entry_operator">=</span> +49 1943 24724784
+<span class="entry">Rachel</span> <span class="entry_operator">=</span> +59 3459 35935593
+<span class="escape_operator">`</span><span class="entry">Dave</span><span class="escape_operator">`</span> <span class="entry_operator">=</span> +69 9025 93593531<span class="caret">|</span></span></code></pre>
   </body>
 </html>

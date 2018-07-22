@@ -1,0 +1,111 @@
+author: Simon Repp
+name: enorphin
+
+# colors
+
+black       :  #333
+dim_gray    :  #ddd8d4
+gray        :  #bbb
+green       :  #b2d218
+lush_green  :  #89d57b
+mid_gray    :  #888
+orange      :  #f06048
+red         :  #ff2400
+blue        :  #5978e2
+yellowed    :  #f5f2f0
+yellow      :  #ffb500
+
+# globals
+
+background: yellowed
+caret: black
+foreground: black
+selection: dim_gray
+
+# scopes
+
+block_name                :  orange
+block_operator            :  mid_gray
+
+comment                   :
+foreground                =  gray 
+styles                    =  italic
+
+comment_operator          :  gray
+continuation_operator     :  mid_gray
+copy_operator             :  mid_gray
+entry                     :  blue
+entry_operator            :  mid_gray
+escape_operator           :  mid_gray
+
+invalid                   :
+background                =  yellow
+foreground                =  red
+
+item_operator             :  mid_gray
+name                      :  orange
+name_operator             :  mid_gray
+
+section1_operator         : yellow
+section1_escape_operator  : mid_gray
+section1_name             :
+foreground                = lush_green
+styles                    = bold
+section1_copy_operator    : mid_gray
+section1_template         :
+foreground                = green
+styles                    = italic
+
+section2_operator         : yellow
+section2_escape_operator  : mid_gray
+section2_name             :
+foreground                = lush_green
+styles                    = bold
+section2_copy_operator    : mid_gray
+section2_template         :
+foreground                = green
+styles                    = italic
+
+section3_operator         : yellow
+section3_escape_operator  : mid_gray
+section3_name             :
+foreground                = lush_green
+styles                    = bold
+section3_copy_operator    : mid_gray
+section3_template         :
+foreground                = green
+styles                    = italic
+
+section4_operator         : yellow
+section4_escape_operator  : mid_gray
+section4_name             :
+foreground                = lush_green
+styles                    = bold
+section4_copy_operator    : mid_gray
+section4_template         :
+foreground                = green
+styles                    = italic
+
+section5_operator         : yellow
+section5_escape_operator  : mid_gray
+section5_name             :
+foreground                = lush_green
+styles                    = bold
+section5_copy_operator    : mid_gray
+section5_template         :
+foreground                = green
+styles                    = italic
+
+section6_operator         : yellow
+section6_escape_operator  : mid_gray
+section6_name             :
+foreground                = lush_green
+styles                    = bold
+section6_copy_operator    : mid_gray
+section6_template         :
+foreground                = green
+styles                    = bold, italic
+
+template                  :
+foreground                = green
+styles                    = italic
