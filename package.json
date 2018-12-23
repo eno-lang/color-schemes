@@ -3,13 +3,13 @@
   "bugs": {
     "url": "https://github.com/eno-lang/color-schemes/issues"
   },
-  "description": "Unified color scheme generator for all eno editor plugins",
-  "devDependencies": {
-    "enojs": "^0.16.0",
-    "fs-extra": "^7.0.0",
-    "glob": "^7.1.2",
-    "nodemon": "^1.18.3"
+  "dependencies": {
+    "enojs": "^0.17.1",
+    "fast-glob": "^2.2.4",
+    "fs-extra": "^7.0.1",
+    "nodemon": "^1.18.9"
   },
+  "description": "Unified color scheme generator for all eno editor plugins",
   "homepage": "https://github.com/eno-lang/color-schemes",
   "keywords": [
     "colors",

@@ -1,15 +1,16 @@
-const { parse, Fieldset } = require('enojs');
+const eno = require('enojs');
+const { Fieldset, TerminalReporter } = require('enojs');
 const fs = require('fs');
 const fsExtra = require('fs-extra');
-const glob = require('glob');
+const glob = require('fast-glob');
 const path = require('path');
 
 const html = require('./templates/html.js');
 const sublime = require('./templates/sublime.js');
 
-const generateScheme = filepath => {
-  const input = fs.readFileSync(filepath, 'utf-8');
-  const document = parse(input, { reporter: 'terminal', sourceLabel: filepath });
+const generateScheme = async filepath => {
+  const input = await fs.promises.readFile(filepath, 'utf-8');
+  const document = eno.parse(input, { reporter: TerminalReporter, sourceLabel: filepath });
 
   const scheme = {
     name: document.string('name', { required: true })
@@ -56,15 +57,16 @@ const generateScheme = filepath => {
   fs.writeFileSync(path.join(__dirname, `dist/sublime/${scheme.name}.sublime-color-scheme`), sublime(scheme));
 }
 
-fsExtra.emptyDirSync(path.join(__dirname, 'dist'));
-fsExtra.mkdirSync(path.join(__dirname, 'dist/html'));
-fsExtra.mkdirSync(path.join(__dirname, 'dist/sublime'));
+const generate = async () => {
+  await fsExtra.emptyDir(path.join(__dirname, 'dist'));
+  await fsExtra.mkdir(path.join(__dirname, 'dist/html'));
+  await fsExtra.mkdir(path.join(__dirname, 'dist/sublime'));
 
-glob(path.join(__dirname, 'schemes/*.eno'), (err, files) => {
-  if(err)
-    throw err;
+  const schemes = await glob(path.join(__dirname, 'schemes/*.eno'));
 
-  for(let file of files) {
-    generateScheme(file);
+  for(let scheme of schemes) {
+    generateScheme(scheme);
   }
-});
+};
+
+generate();
